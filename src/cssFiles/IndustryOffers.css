@@ -1,0 +1,216 @@
+#Anchor1 {
+    -fx-background-color: #add8e6; /* Light blue */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px; /* Rounded corners for a modern look */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light green background for Anchor2 */
+#Anchor2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light yellow background for Anchor3 */
+#Anchor3 {
+    -fx-background-color: #ffffe0; /* Light yellow */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#Anchor1:hover {
+    -fx-background-color: #87cefa; /* Slightly darker blue on hover */
+}
+
+#Anchor2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#Anchor3:hover {
+    -fx-background-color: #fffacd; /* Slightly darker yellow on hover */
+}
+#ViewRankingButton {
+    -fx-background-color: #007bff; /* Blue background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Smaller padding for a reduced height */
+    -fx-border-radius: 4px; /* Slightly smaller rounded corners */
+    -fx-font-size: 11px; /* Slightly smaller font size */
+    -fx-font-weight: bold; /* Keep the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+    -fx-border-color: #0056b3; /* Subtle blue border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#JobTable {
+    -fx-background-color: #f8fdf6; /* Light background to complement the colors */
+    -fx-border-color: #c3e6cb; /* Subtle green border */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-font-family: "Times New Roman"; /* Updated to Times New Roman for a formal look */
+    -fx-font-size: 12px; /* Adjusted font size */
+}
+
+/* Column Header Styling */
+#JobTable .column-header {
+    -fx-background-color: #e6ffe6; /* Very light green background for headers */
+    -fx-text-fill: #155724; /* Dark green text for headers */
+    -fx-font-weight: bold; /* Bold text for headers */
+    -fx-border-color: #c3e6cb; /* Matching table border */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center align header text */
+    -fx-padding: 8px; /* Padding for header cells */
+}
+
+/* Column Specific Styling */
+#JobTable .column-name {
+    -fx-background-color: #fef9e7; /* Light yellow for ID column */
+    -fx-text-fill: #6c757d; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#JobTable .column-id {
+    -fx-background-color: #e8f8f5; /* Light aqua for Name column */
+    -fx-text-fill: #007b80; /* Muted teal text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#JobTable .column-email {
+    -fx-background-color: #e9ecef; /* Light gray for Type column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#JobTable .column-cgpa {
+    -fx-background-color: #e9ecef; /* Light gray for Type column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#JobTable .column-performance {
+    -fx-background-color: #e9ecef; /* Light gray for Type column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+/* Table Cell Styling */
+#JobTable .table-cell {
+    -fx-padding: 10px; /* Padding inside cells */
+    -fx-border-color: #dee2e6; /* Subtle border between cells */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align text in all cells */
+    -fx-text-fill: #006400; /* Dark green font for all entries */
+}
+
+/* Table Row Hover Effect */
+#JobTable .table-row-cell:hover {
+    -fx-background-color: #e2f3e2; /* Light green background on hover */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+}
+
+
+#OfferTable {
+    -fx-background-color: #edf7fc; /* Light blue background to match anchor */
+    -fx-border-color: #b0d4e3; /* Subtle blue border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-font-family: "Times New Roman"; /* Formal and elegant font */
+    -fx-font-size: 12px; /* Readable and smaller font size */
+}
+
+/* Column Header Styling */
+#OfferTable .column-header {
+    -fx-background-color: #d4eefb; /* Soft blue for headers */
+    -fx-text-fill: #085b8a; /* Dark blue text for headers */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-border-color: #b0d4e3; /* Border matching the table */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center align header text */
+    -fx-padding: 8px; /* Padding for header cells */
+}
+
+/* Column Specific Styling */
+#OfferTable .column-name {
+    -fx-background-color: #f0faff; /* Very light blue for ID column */
+    -fx-text-fill: #333f50; /* Neutral dark gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#OfferTable .column-id {
+    -fx-background-color: #e4f5fc; /* Light aqua blue for Name column */
+    -fx-text-fill: #005480; /* Muted blue text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#OfferTable .column-email {
+    -fx-background-color: #f5fafd; /* Lightest blue for StartDate column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#OfferTable .column-cgpa {
+    -fx-background-color: #f5fafd; /* Lightest blue for StartDate column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#OfferTable .column-performance {
+    -fx-background-color: #f5fafd; /* Lightest blue for StartDate column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+/* Table Cell Padding and Border */
+#OfferTable .table-cell {
+    -fx-padding: 10px; /* Padding inside cells */
+    -fx-border-color: #d1e4ec; /* Subtle border between cells */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align text in all cells */
+    -fx-text-fill: #0000ff; /* Blue text for all entries */
+}
+
+/* Table Row Hover Effect */
+#OfferTable .table-row-cell:hover {
+    -fx-background-color: #f1faff; /* Very light blue background on hover */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+}
+
+#AcceptButton {
+    -fx-background-color: #28a745; /* Green background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Compact padding for neat size */
+    -fx-border-radius: 4px; /* Rounded corners for a polished look */
+    -fx-font-size: 11px; /* Balanced font size */
+    -fx-font-weight: bold; /* Bold text for prominence */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-border-color: #1e7e34; /* Subtle darker green border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#AcceptButton:hover {
+    -fx-background-color: #218838; /* Darker green for hover effect */
+    -fx-border-color: #1c7430; /* Slightly darker border on hover */
+}
+
+/* RejectButton - Red */
+#RejectButton {
+    -fx-background-color: #dc3545; /* Red background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Compact padding for neat size */
+    -fx-border-radius: 4px; /* Rounded corners for a polished look */
+    -fx-font-size: 11px; /* Balanced font size */
+    -fx-font-weight: bold; /* Bold text for prominence */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-border-color: #b21f31; /* Subtle darker red border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#RejectButton:hover {
+    -fx-background-color: #c82333; /* Darker red for hover effect */
+    -fx-border-color: #a71d2a; /* Slightly darker border on hover */
+}

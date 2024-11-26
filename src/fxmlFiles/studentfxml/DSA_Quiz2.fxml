@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" stylesheets="@../../cssFiles/QuizStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="Header" alignment="CENTER" layoutX="379.0" layoutY="14.0" text="Design and Analysis of Algorithm Quiz1">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="53.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" prefHeight="36.0" prefWidth="362.0" text="1. Which term refers to the growth rate of an algorithm?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q1b1" layoutX="71.0" layoutY="50.0" mnemonicParsing="false" selected="true" text="a) Graph">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q1" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q1b2" layoutX="201.0" layoutY="50.0" mnemonicParsing="false" text="b) Complexity" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b3" layoutX="346.0" layoutY="50.0" mnemonicParsing="false" text="c)  Recursion" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b4" layoutX="493.0" layoutY="50.0" mnemonicParsing="false" text="d) Dynamic" toggleGroup="$q1" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="145.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="47.0" layoutY="14.0" prefHeight="36.0" prefWidth="398.0" text="2. Which technique splits problems into smaller subproblems?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q2b1" layoutX="68.0" layoutY="50.0" mnemonicParsing="false" text="a) Sorting">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q2" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q2b2" layoutX="198.0" layoutY="50.0" mnemonicParsing="false" text="b) Divide" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b3" layoutX="348.0" layoutY="50.0" mnemonicParsing="false" text="c) Matrix" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b4" layoutX="491.0" layoutY="50.0" mnemonicParsing="false" text="d) Greedy" toggleGroup="$q2" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="81.0" layoutY="231.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="36.0" prefWidth="461.0" text="3. Which algorithm is used for finding the shortest path in a graph?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q3b1" layoutX="72.0" layoutY="51.0" mnemonicParsing="false" text="a) Prim’s">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q3" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q3b2" layoutX="196.0" layoutY="51.0" mnemonicParsing="false" text="b)Dijkstra" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b3" layoutX="348.0" layoutY="51.0" mnemonicParsing="false" text="c) Kruskal" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b4" layoutX="490.0" layoutY="53.0" mnemonicParsing="false" text="d) Floyd" toggleGroup="$q3" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="81.0" layoutY="329.0" prefHeight="70.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="36.0" prefWidth="453.0" text="4. Which term describes the use of previously solved subproblems?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q4b1" layoutX="68.0" layoutY="50.0" mnemonicParsing="false" text="a) Dynamic">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q4" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q4b2" layoutX="192.0" layoutY="50.0" mnemonicParsing="false" text="b) Recursion" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b3" layoutX="347.0" layoutY="50.0" mnemonicParsing="false" text="c) Memoization" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b4" layoutX="489.0" layoutY="50.0" mnemonicParsing="false" text="d) Heuristic" toggleGroup="$q4" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="426.0" prefHeight="75.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" prefHeight="36.0" prefWidth="387.0" text="5. Which complexity is the worst-case time for Merge Sort?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q5b1" layoutX="70.0" layoutY="56.0" mnemonicParsing="false" text="a) O(n)">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q5" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="q5b2" layoutX="192.0" layoutY="56.0" mnemonicParsing="false" text="b) O(n^2)" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b3" layoutX="349.0" layoutY="56.0" mnemonicParsing="false" text="c) O(n log n)" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b4" layoutX="494.0" layoutY="56.0" mnemonicParsing="false" text="d) O(log n)" toggleGroup="$q5" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="SubmitButton" layoutX="444.0" layoutY="581.0" mnemonicParsing="false" onAction="#submitQuiz4" prefHeight="38.0" prefWidth="88.0" text="Submit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

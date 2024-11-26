@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="174.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button layoutX="1.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchtoDashBoard" prefHeight="35.0" prefWidth="135.0" text="DashBoard" />
+            <Button layoutX="1.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="135.0" text="Accounts" />
+            <Button layoutY="140.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="40.0" prefWidth="135.0" text="Performance " />
+            <Button layoutY="215.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="135.0" text="Settings" />
+            <Button fx:id="SelectedTab" layoutY="180.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="135.0" text="Offers" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0">
+         <children>
+            <AnchorPane fx:id="Anchor1" layoutX="14.0" layoutY="34.0" prefHeight="239.0" prefWidth="766.0">
+               <children>
+                  <TableView fx:id="OffersTable" layoutX="13.0" layoutY="16.0" prefHeight="196.0" prefWidth="730.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="115.19999694824219" text="Student ID" />
+                      <TableColumn fx:id="name" prefWidth="161.60003662109375" text="Student Name" />
+                        <TableColumn fx:id="emails" prefWidth="172.7999267578125" text="Student Email" />
+                        <TableColumn fx:id="cgpa" minWidth="0.0" prefWidth="128.7999267578125" text="CGPA" />
+                        <TableColumn fx:id="performance" prefWidth="149.599853515625" text="Student Performance" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="AcceptButton" layoutX="645.0" layoutY="220.0" mnemonicParsing="false" onAction="#offerStudent" prefHeight="40.0" prefWidth="97.0" text="Offer" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="318.0" text="Students Applied" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor2" layoutX="10.0" layoutY="346.0" prefHeight="260.0" prefWidth="774.0">
+               <children>
+                  <TableView fx:id="AppliedTable" layoutX="13.0" layoutY="16.0" prefHeight="196.0" prefWidth="730.0">
+                     <columns>
+                        <TableColumn fx:id="id1" prefWidth="115.19999694824219" text="Student ID" />
+                        <TableColumn fx:id="name1" prefWidth="161.60003662109375" text="Student Name" />
+                        <TableColumn fx:id="emails1" prefWidth="172.7999267578125" text="Student Email" />
+                        <TableColumn fx:id="cgpa1" minWidth="0.0" prefWidth="128.7999267578125" text="CGPA" />
+                        <TableColumn fx:id="performance1" prefWidth="149.599853515625" text="Student Performance" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="AcceptButton" layoutX="529.0" layoutY="224.0" mnemonicParsing="false" onAction="#acceptApplyingStudent" prefHeight="40.0" prefWidth="97.0" text="Accept" />
+                  <Button fx:id="RejectButton" layoutX="645.0" layoutY="224.0" mnemonicParsing="false" onAction="#rejectApplyingStudent" prefHeight="40.0" prefWidth="97.0" text="Reject" />
+                  <Button fx:id="LeaderBoardsButton" layoutX="14.0" layoutY="223.0" mnemonicParsing="false" onAction="#switchtoStudyMaterial" prefHeight="44.0" prefWidth="377.0" text="View Currently Enrolled Students" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="9.0" text="Offers" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </items>
+   <stylesheets>
+      <URL value="@../../cssFiles/application.css" />
+      <URL value="@../../cssFiles/Offers.css" />
+   </stylesheets>
+</SplitPane>

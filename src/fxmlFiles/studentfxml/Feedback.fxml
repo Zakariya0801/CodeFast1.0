@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" stylesheets="@../../cssFiles/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button layoutX="1.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchtoDashBoard" prefHeight="35.0" prefWidth="135.0" text="DashBoard" />
+            <Button layoutX="1.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="35.0" prefWidth="135.0" text="Courses" />
+            <Button layoutX="1.0" layoutY="145.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="135.0" text="Accounts" />
+            <Button layoutY="250.0" mnemonicParsing="false" onAction="#switchtoStudyMaterial" prefHeight="35.0" prefWidth="135.0" text="Study Material" />
+            <Button layoutY="285.0" mnemonicParsing="false" onAction="#switchtoJobInternship" prefHeight="35.0" prefWidth="135.0" text="Job/Internship" />
+            <Button fx:id="SelectedTab" layoutY="320.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="135.0" text="Feedback" />
+            <Button layoutY="355.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="135.0" text="Settings" />
+            <Button layoutX="1.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="35.0" prefWidth="135.0" text="Contests" />
+            <Button layoutY="215.0" mnemonicParsing="false" onAction="#switchtoCareer" prefHeight="35.0" prefWidth="135.0" text="Career" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label layoutX="38.0" layoutY="49.0" text="FeedBack" textFill="#0509f4">
+               <font>
+                  <Font name="Goudy Old Style Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="38.0" layoutY="125.0" text="Dear">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="UserName" layoutX="75.0" layoutY="125.0" text="Sname" textFill="#150dec">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="178.0" layoutY="126.0" text=",">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="154.0" text="Welcome to ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="119.0" layoutY="154.0" text="CodeFast">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="182.0" layoutY="154.0" text=", an application build with dedication and motivation to improve your study routine and">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="174.0" text=" academic performance. ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="string1" layoutX="40.0" layoutY="202.0" text="str1" textFill="#1947c6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="string2" layoutX="40.0" layoutY="222.0" text="str2" textFill="#1947c6">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="272.0" text="Yours Sincerely,">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="39.0" layoutY="292.0" text="CodeFast Team">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="252.0" text="Thank You, For choosing CodeFast as your academic prefernece.">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

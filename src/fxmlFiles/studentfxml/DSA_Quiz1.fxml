@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" stylesheets="@../../cssFiles/QuizStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="Header" alignment="CENTER" layoutX="347.0" layoutY="17.0" text="Design and Analysis of Algorithm Quiz2">
+               <font>
+                  <Font name="System Bold" size="54.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="69.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="53.0" layoutY="14.0" prefHeight="36.0" prefWidth="272.0" text="1. Which algorithm uses a priority queue?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q1b1" layoutX="72.0" layoutY="55.0" mnemonicParsing="false" selected="true" text="a) Bubble">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q1" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q1b2" layoutX="226.0" layoutY="55.0" mnemonicParsing="false" text="b) Dijkstra" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b3" layoutX="379.0" layoutY="55.0" mnemonicParsing="false" text="c) Quick" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b4" layoutX="555.0" layoutY="55.0" mnemonicParsing="false" text="Backtracking" toggleGroup="$q1" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="161.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label alignment="TOP_LEFT" layoutX="47.0" layoutY="14.0" prefHeight="36.0" prefWidth="356.0" text="2. Which sorting algorithm is not comparison-based?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q2b1" layoutX="71.0" layoutY="50.0" mnemonicParsing="false" text="a) Quick Sort">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q2" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q2b2" layoutX="225.0" layoutY="50.0" mnemonicParsing="false" text="b) Merge Sort" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b3" layoutX="381.0" layoutY="50.0" mnemonicParsing="false" text="c) Counting Sort" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b4" layoutX="555.0" layoutY="50.0" mnemonicParsing="false" text="d) Heap Sort" toggleGroup="$q2" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="253.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="36.0" prefWidth="429.0" text="3. Which problem involves selecting items to maximize value?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q3b1" layoutX="70.0" layoutY="50.0" mnemonicParsing="false" text="a) Sorting">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q3" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q3b2" layoutX="220.0" layoutY="50.0" mnemonicParsing="false" text="b) Searching" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b3" layoutX="384.0" layoutY="50.0" mnemonicParsing="false" text="c) Knapsack" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b4" layoutX="553.0" layoutY="50.0" mnemonicParsing="false" text="d) Graph" toggleGroup="$q3" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="81.0" layoutY="345.0" prefHeight="70.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="36.0" prefWidth="315.0" text="4. Which graph algorithm checks for cycles?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q4b1" layoutX="67.0" layoutY="50.0" mnemonicParsing="false" text="a) DFS">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q4" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q4b2" layoutX="220.0" layoutY="50.0" mnemonicParsing="false" text="b) BFS" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b3" layoutX="384.0" layoutY="50.0" mnemonicParsing="false" text="c) Prim’s" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b4" layoutX="552.0" layoutY="46.0" mnemonicParsing="false" text="d) Kruskal" toggleGroup="$q4" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="437.0" prefHeight="75.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" prefHeight="36.0" prefWidth="326.0" text="5. Which scheduling algorithm is greedy-based?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q5b1" layoutX="65.0" layoutY="50.0" mnemonicParsing="false" text="a) Round-Robin">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q5" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q5b2" layoutX="218.0" layoutY="50.0" mnemonicParsing="false" text="b) Job Sequencing" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b3" layoutX="383.0" layoutY="50.0" mnemonicParsing="false" text="c) Multilevel" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b4" layoutX="548.0" layoutY="50.0" mnemonicParsing="false" text="d) FIFO" toggleGroup="$q5" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="SubmitButton" layoutX="444.0" layoutY="566.0" mnemonicParsing="false" onAction="#submitQuiz3" prefHeight="38.0" prefWidth="88.0" text="Submit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

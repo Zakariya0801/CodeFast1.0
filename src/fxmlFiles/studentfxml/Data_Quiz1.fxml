@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" stylesheets="@../../cssFiles/QuizStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="678.0" prefWidth="978.0">
+         <children>
+            <Label fx:id="Header" alignment="CENTER" layoutX="400.0" layoutY="14.0" text="Data Structure Quiz 1">
+               <font>
+                  <Font name="System Bold" size="9.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Ancor1" layoutX="82.0" layoutY="57.0" prefHeight="75.0" prefWidth="814.0">
+               <children>
+                  <Label fx:id="label1" layoutX="35.0" layoutY="14.0" prefHeight="20.0" prefWidth="562.0" text="1.  What is the maximum number of children a node can have in a binary tree?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q1b1" layoutX="100.0" layoutY="52.0" mnemonicParsing="false" selected="true" text="a) 1">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q1" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q1b2" layoutX="244.0" layoutY="52.0" mnemonicParsing="false" text="b) 2" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b3" layoutX="383.0" layoutY="52.0" mnemonicParsing="false" text="c) 3" toggleGroup="$q1" />
+                  <RadioButton fx:id="q1b4" layoutX="530.0" layoutY="52.0" mnemonicParsing="false" text="d) 4" toggleGroup="$q1" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="154.0" prefHeight="91.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="20.0" prefWidth="642.0" text="2. Which of the following data structures is best suited for implementing a priority queue?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q2b1" layoutX="95.0" layoutY="52.0" mnemonicParsing="false" text="a)  Array">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q2" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q2b2" layoutX="239.0" layoutY="52.0" mnemonicParsing="false" text="b) Linked List" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b3" layoutX="376.0" layoutY="52.0" mnemonicParsing="false" text="c) Binary Heap" toggleGroup="$q2" />
+                  <RadioButton fx:id="q2b4" layoutX="524.0" layoutY="52.0" mnemonicParsing="false" text="d)  Stack" toggleGroup="$q2" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="241.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="20.0" prefWidth="591.0" text="3.  In which of the following data structures is deletion at the front most efficient?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q3b1" layoutX="95.0" layoutY="52.0" mnemonicParsing="false" text="a) Array">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q3" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q3b2" layoutX="237.0" layoutY="51.0" mnemonicParsing="false" text="b) Stack" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b3" layoutX="376.0" layoutY="52.0" mnemonicParsing="false" text="c)  Linked List" toggleGroup="$q3" />
+                  <RadioButton fx:id="q3b4" layoutX="523.0" layoutY="52.0" mnemonicParsing="false" text="d) Queue" toggleGroup="$q3" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="332.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="20.0" prefWidth="630.0" text="4.  Which algorithm is typically used to find the shortest path in a weighted graph?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q4b1" layoutX="95.0" layoutY="52.0" mnemonicParsing="false" text="a)Breadth-First Search">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q4" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q4b2" layoutX="249.0" layoutY="52.0" mnemonicParsing="false" text="b)  Depth-First Search" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b3" layoutX="407.0" layoutY="52.0" mnemonicParsing="false" text="c) Dijkstra’s Algorithm" toggleGroup="$q4" />
+                  <RadioButton fx:id="q4b4" layoutX="564.0" layoutY="52.0" mnemonicParsing="false" text="d) Bubble Sort" toggleGroup="$q4" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lable1" layoutX="82.0" layoutY="425.0" prefHeight="80.0" prefWidth="814.0">
+               <children>
+                  <Label layoutX="35.0" layoutY="14.0" prefHeight="20.0" prefWidth="498.0" text="5.  What is the time complexity of inserting an element into an AVL tree?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="q5b1" layoutX="94.0" layoutY="52.0" mnemonicParsing="false" text="a) O(1)">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="q5" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="q5b2" layoutX="226.0" layoutY="52.0" mnemonicParsing="false" text="b) O(n^2)" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b3" layoutX="364.0" layoutY="52.0" mnemonicParsing="false" text="c)  O(n)" toggleGroup="$q5" />
+                  <RadioButton fx:id="q5b4" layoutX="516.0" layoutY="52.0" mnemonicParsing="false" text="d)  O(log n)" toggleGroup="$q5" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="SubmitButton" layoutX="438.0" layoutY="592.0" mnemonicParsing="false" onAction="#submitQuiz1" prefHeight="36.0" prefWidth="88.0" text="Submit">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
