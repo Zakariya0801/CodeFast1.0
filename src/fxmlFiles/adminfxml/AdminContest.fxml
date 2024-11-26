@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="174.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button layoutX="-2.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchtoDashBoard" prefHeight="35.0" prefWidth="138.0" text="DashBoard" />
+            <Button layoutX="-2.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="138.0" text="Accounts" />
+            <Button layoutX="-1.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="40.0" prefWidth="138.0" text="Performance " />
+            <Button layoutX="-2.0" layoutY="285.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="138.0" text="Settings" />
+            <Button layoutX="-1.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="35.0" prefWidth="138.0" text="Requests" />
+            <Button layoutX="-1.0" layoutY="215.0" mnemonicParsing="false" onAction="#switchtoStudyMaterial" prefHeight="35.0" prefWidth="138.0" text="Manage" />
+            <Button fx:id="SelectedTab" layoutX="-1.0" layoutY="250.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="Contests" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0" stylesheets="@../../cssFiles/IndustryStyle.css">
+         <children>
+            <Label layoutX="21.0" layoutY="22.0" text="Registered Contests" textFill="#100ac7">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor2" layoutX="14.0" layoutY="44.0" prefHeight="238.0" prefWidth="770.0">
+               <children>
+                  <TableView fx:id="ContestTable" layoutX="14.0" layoutY="9.0" prefHeight="200.0" prefWidth="735.0">
+                    <columns>
+                      <TableColumn fx:id="ContestID" prefWidth="136.8000030517578" text="Contest_ID" />
+                      <TableColumn fx:id="ContestName" prefWidth="204.79998779296875" text="Contest_Name" />
+                        <TableColumn fx:id="StartDate" prefWidth="182.39996337890625" text="Start_Date" />
+                        <TableColumn fx:id="EndDate" prefWidth="189.60009765625" text="End_Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="289.0" text="Add Contest" textFill="#100ac7">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor1" layoutX="14.0" layoutY="312.0" prefHeight="318.0" prefWidth="770.0">
+               <children>
+                  <Label layoutX="65.0" layoutY="14.0" text="Name: " textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="62.0" text="Start Time: " textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="377.0" layoutY="62.0" text="End Time: " textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="34.0" layoutY="103.0" text="Statement: " textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="186.0" text="Test Output:" textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ContesName" layoutX="139.0" layoutY="9.0" promptText="Name " />
+                  <TextArea fx:id="ProblemStatement" layoutX="140.0" layoutY="97.0" prefHeight="75.0" prefWidth="578.0" promptText="Problem Statement " />
+                  <DatePicker fx:id="StartTime" layoutX="139.0" layoutY="57.0" prefHeight="30.0" prefWidth="186.0" promptText="Starting Time " />
+                  <DatePicker fx:id="EndTime" layoutX="468.0" layoutY="57.0" prefHeight="30.0" prefWidth="186.0" promptText="Ending Time" />
+                  <TextArea fx:id="TestCaseOutput" layoutX="140.0" layoutY="182.0" prefHeight="67.0" prefWidth="242.0" promptText="Sample Output" />
+                  <Button fx:id="AttemptButton" layoutX="602.0" layoutY="265.0" mnemonicParsing="false" onAction="#AddNewContest" prefHeight="30.0" prefWidth="116.0" text="Add Contest" />
+                  <Label layoutX="389.0" layoutY="184.0" text="Test Input:" textFill="#100ac7">
+                     <font>
+                        <Font name="Times New Roman Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="TestCaseInput" layoutX="476.0" layoutY="182.0" prefHeight="67.0" prefWidth="242.0" promptText="Sample Input" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </items>
+   <stylesheets>
+      <URL value="@../../cssFiles/application.css" />
+      <URL value="@../../cssFiles/ContestStyle.css" />
+   </stylesheets>
+</SplitPane>

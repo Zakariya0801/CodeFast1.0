@@ -1,0 +1,50 @@
+#Anchor1 {
+    -fx-background-color: #add8e6; /* Light blue */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px; /* Rounded corners for a modern look */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light green background for Anchor2 */
+#Anchor2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light yellow background for Anchor3 */
+#Anchor3 {
+    -fx-background-color: #ffffe0; /* Light yellow */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#Anchor1:hover {
+    -fx-background-color: #87cefa; /* Slightly darker blue on hover */
+}
+
+#Anchor2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#Anchor3:hover {
+    -fx-background-color: #fffacd; /* Slightly darker yellow on hover */
+}
+#ApllyButton {
+    -fx-background-color: #28a745; /* Green background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 10px 20px; /* Add padding for a neat button size */
+    -fx-border-radius: 5px; /* Rounded corners for better appearance */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-weight: bold; /* Make the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+}
+
+#ApllyButton:hover {
+    -fx-background-color: #218838; /* Darker green for hover effect */
+}

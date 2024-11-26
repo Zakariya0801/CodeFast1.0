@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardController">
+   <children>
+      <ImageView fitHeight="112.0" fitWidth="128.0" layoutX="35.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="165.0" layoutY="64.0" prefHeight="17.0" prefWidth="159.0" text="CodeFast">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="439.0" layoutY="153.0" text="Log In">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="231.0" layoutY="291.0" text="User ID:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Userid" layoutX="365.0" layoutY="295.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="231.0" layoutY="383.0" text="Password:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="365.0" layoutY="387.0" prefHeight="25.0" prefWidth="325.0" />
+      <Label layoutX="395.0" layoutY="518.0" text="Don't Have an Account yet? " />
+      <Hyperlink fx:id="switchtoSignup" layoutX="557.0" layoutY="515.0" onAction="#switchtoSignUp" text="Sign Up" />
+      <Button layoutX="471.0" layoutY="453.0" mnemonicParsing="false" onAction="#tryLogin" text="Log in" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@../cssFiles/application.css" />
+      <URL value="@../cssFiles/styling.css" />
+   </stylesheets>
+</AnchorPane>

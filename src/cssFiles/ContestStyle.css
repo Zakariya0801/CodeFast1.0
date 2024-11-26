@@ -1,0 +1,154 @@
+#Anchor1 {
+    -fx-background-color: #add8e6; /* Light blue */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px; /* Rounded corners for a modern look */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light green background for Anchor2 */
+#Anchor2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light yellow background for Anchor3 */
+#Anchor3 {
+    -fx-background-color: #ffffe0; /* Light yellow */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#Anchor1:hover {
+    -fx-background-color: #87cefa; /* Slightly darker blue on hover */
+}
+
+#Anchor2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#Anchor3:hover {
+    -fx-background-color: #fffacd; /* Slightly darker yellow on hover */
+}
+#ViewRankingButton {
+    -fx-background-color: #007bff; /* Blue background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Smaller padding for a reduced height */
+    -fx-border-radius: 4px; /* Slightly smaller rounded corners */
+    -fx-font-size: 11px; /* Slightly smaller font size */
+    -fx-font-weight: bold; /* Keep the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+    -fx-border-color: #0056b3; /* Subtle blue border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#ViewRankingButton:hover {
+    -fx-background-color: #0056b3; /* Darker blue for hover effect */
+    -fx-border-color: #004085; /* Even darker border on hover */
+}
+#AttemptButton {
+    -fx-background-color: #fd7e14; /* Orange background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Compact padding for neat size */
+    -fx-border-radius: 4px; /* Rounded corners for a polished look */
+    -fx-font-size: 11px; /* Smaller font size for balance */
+    -fx-font-weight: bold; /* Bold text for prominence */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-border-color: #dc6708; /* Subtle darker orange border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#AttemptButton:hover {
+    -fx-background-color: #e06612; /* Darker orange for hover effect */
+    -fx-border-color: #c0580b; /* Slightly darker border on hover */
+}
+#ContestTable {
+    -fx-background-color: #f8fdf6; /* Light green background to complement the colors */
+    -fx-border-color: #c3e6cb; /* Subtle green border */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-font-family: "Times New Roman"; /* Dark green font for rows */
+    -fx-font-size: 12px; /* Font size matching JobTable */
+}
+
+/* Column Header Styling */
+#ContestTable .column-header {
+    -fx-background-color: #e6ffe6; /* Very light green background for headers */
+    -fx-text-fill: #155724; /* Dark green text for headers */
+    -fx-font-weight: bold; /* Bold text for headers */
+    -fx-border-color: #c3e6cb; /* Matching table border */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align header text */
+    -fx-padding: 8px; /* Padding for header cells */
+}
+
+/* Column Specific Styling */
+#ContestTable .column-ID {
+    -fx-background-color: #fef9e7; /* Light yellow for ID column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#ContestTable .column-Name {
+    -fx-background-color: #e8f8f5; /* Light aqua for Name column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#ContestTable .column-StartDate {
+    -fx-background-color: #e9ecef; /* Light gray for StartDate column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#ContestTable .column-EndDate {
+    -fx-background-color: #fdf2f2; /* Light pink for EndDate column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+/* Table Cell Padding and Border */
+#ContestTable .table-cell {
+    -fx-padding: 10px; /* Padding inside cells */
+    -fx-border-color: #dee2e6; /* Subtle border between cells */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align content */
+    -fx-text-fill: #155724; /* Dark green text for all entries */
+}
+
+/* Table Row Hover Effect */
+#ContestTable .table-row-cell:hover {
+    -fx-background-color: #d1e7dd; /* Light green hover effect */
+    -fx-text-fill: #155724; /* Dark green text on hover */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+}
+
+#LeaderBoardsButton {
+    -fx-background-color: #003366; /* Dark blue background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-font-size: 14px; /* Larger font for prominence */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-padding: 10px 20px; /* Add padding for a balanced size */
+    -fx-border-radius: 6px; /* Slightly rounded corners for elegance */
+    -fx-border-width: 2px; /* Slightly thicker border for a formal look */
+    -fx-border-color: #002244; /* Slightly darker border to complement the button */
+    -fx-cursor: hand; /* Pointer cursor for interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2); /* Subtle shadow effect for depth */
+    -fx-alignment: center; /* Center the text */
+}
+
+/* Hover Effect */
+#LeaderBoardsButton:hover {
+    -fx-background-color: #00509e; /* Lighter blue on hover */
+    -fx-border-color: #003366; /* Slightly brighter border */
+    -fx-text-fill: #e6f7ff; /* Light blue text color on hover */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 6, 0, 3, 3); /* Enhanced shadow on hover */
+}
+
+/* Active/Pressed State */
+#LeaderBoardsButton:pressed {
+    -fx-background-color: #001a33; /* Darker shade when pressed */
+    -fx-border-color: #001a33; /* Dark border for pressed state */
+    -fx-effect: none; /* Remove shadow on press */
+}

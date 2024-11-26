@@ -1,0 +1,123 @@
+#Anchor1 {
+    -fx-background-color: #e1f3fa; /* Lighter blue */
+    -fx-padding: 10px; /* Neat spacing */
+    -fx-border-radius: 8px; /* Rounded corners for a polished look */
+    -fx-font-size: 14px; /* Balanced font size */
+    -fx-font-weight: bold; /* Bold text for prominence */
+    -fx-alignment: center; /* Default alignment, changeable in SceneBuilder */
+    -fx-text-alignment: center; /* Text alignment for multi-line text */
+    -fx-wrap-text: true; /* Enable text wrapping */
+}
+#Anchor2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+#Anchor2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#RankingsTable {
+    -fx-background-color: #f8fdf6; /* Light green background to complement the colors */
+    -fx-border-color: #c3e6cb; /* Subtle green border */
+    -fx-border-radius: 5px; /* Slightly rounded corners */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-font-family: "Times New Roman"; /* Dark green font for rows */
+    -fx-font-size: 12px; /* Font size matching JobTable */
+}
+
+/* Column Header Styling */
+#RankingsTable .column-header {
+    -fx-background-color: #e6ffe6; /* Very light green background for headers */
+    -fx-text-fill: #155724; /* Dark green text for headers */
+    -fx-font-weight: bold; /* Bold text for headers */
+    -fx-border-color: #c3e6cb; /* Matching table border */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align header text */
+    -fx-padding: 8px; /* Padding for header cells */
+}
+
+/* Column Specific Styling */
+#RankingsTable .column-Position {
+    -fx-background-color: #fff9e6; /* Light yellow for Position column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#RankingsTable .column-ID {
+    -fx-background-color: #e9f7fa; /* Light blue for ID column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#RankingsTable .column-Name {
+    -fx-background-color: #e8f8f5; /* Light aqua for Name column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#RankingsTable .column-Score {
+    -fx-background-color: #fdf9f4; /* Light peach for Score column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#RankingsTable .column-Percentage {
+    -fx-background-color: #e9ecef; /* Light gray for Percentage column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+#RankingsTable .column-Performance {
+    -fx-background-color: #fdf2f2; /* Light pink for Performance column */
+    -fx-text-fill: #155724; /* Dark green text */
+}
+
+/* Row Hover Effect */
+#RankingsTable .table-row-cell:hover {
+    -fx-background-color: #cfe8d9; /* Light green hover effect */
+    -fx-text-fill: #155724; /* Dark green text on hover */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+}
+
+/* Table Cell Padding and Border */
+#RankingsTable .table-cell {
+    -fx-padding: 10px; /* Padding inside cells */
+    -fx-border-color: #dee2e6; /* Subtle border between cells */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align content */
+    -fx-text-fill: #155724; /* Dark green text for all entries */
+}
+
+/* Table Row Hover Effect */
+#RankingsTable .table-row-cell:hover {
+    -fx-background-color: #e0f3e0; /* Light green background on hover */
+    -fx-cursor: hand; /* Pointer cursor for interactivity */
+}
+
+
+#BackButton {
+    -fx-background-color: #fd7e14; /* Vibrant orange background */
+    -fx-text-fill: #ffffff; /* White text color for contrast */
+    -fx-font-size: 14px; /* Larger font for clear visibility */
+    -fx-font-weight: bold; /* Bold text for emphasis */
+    -fx-padding: 10px 20px; /* Balanced padding for neat size */
+    -fx-border-radius: 6px; /* Slightly rounded corners for elegance */
+    -fx-border-width: 2px; /* Defined border for a formal appearance */
+    -fx-border-color: #e36a0a; /* Slightly darker orange border for contrast */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 4, 0, 2, 2); /* Subtle shadow for depth */
+    -fx-alignment: center; /* Center the text */
+}
+
+/* Hover Effect */
+#BackButton:hover {
+    -fx-background-color: #e06612; /* Slightly darker orange on hover */
+    -fx-border-color: #c0580b; /* Muted darker border for hover effect */
+    -fx-text-fill: #ffe6cc; /* Soft cream text for added contrast */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.35), 6, 0, 3, 3); /* Enhanced shadow for hover */
+}
+
+/* Active/Pressed State */
+#BackButton:pressed {
+    -fx-background-color: #b54d09; /* Darker orange for pressed state */
+    -fx-border-color: #7f3306; /* Deep brown-orange border for pressed effect */
+    -fx-effect: none; /* Remove shadow on press */
+}

@@ -1,0 +1,69 @@
+#Anchor1 {
+    -fx-background-color: #add8e6; /* Light blue */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px; /* Rounded corners for a modern look */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light green background for Anchor2 */
+#Anchor2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light yellow background for Anchor3 */
+#Anchor3 {
+    -fx-background-color: #ffffe0; /* Light yellow */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#Anchor1:hover {
+    -fx-background-color: #87cefa; /* Slightly darker blue on hover */
+}
+
+#Anchor2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#Anchor3:hover {
+    -fx-background-color: #fffacd; /* Slightly darker yellow on hover */
+}
+#RegisterButton {
+    -fx-background-color: #28a745; /* Green background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Smaller padding for a reduced height */
+    -fx-border-radius: 4px; /* Slightly smaller rounded corners */
+    -fx-font-size: 11px; /* Slightly smaller font size */
+    -fx-font-weight: bold; /* Keep the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+    -fx-border-color: #1e7e34; /* Add a subtle border for better appearance */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#RegisterButton:hover {
+    -fx-background-color: #218838; /* Darker green for hover effect */
+    -fx-border-color: #1c7430; /* Slightly darker border on hover */
+}
+#AttemptButton {
+    -fx-background-color: #fd7e14; /* Orange background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 6px 16px; /* Compact padding for neat size */
+    -fx-border-radius: 4px; /* Rounded corners for a polished look */
+    -fx-font-size: 11px; /* Smaller font size for balance */
+    -fx-font-weight: bold; /* Bold text for prominence */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-border-color: #dc6708; /* Subtle darker orange border */
+    -fx-border-width: 1px; /* Thin border */
+}
+
+#AttemptButton:hover {
+    -fx-background-color: #e06612; /* Darker orange for hover effect */
+    -fx-border-color: #c0580b; /* Slightly darker border on hover */
+}

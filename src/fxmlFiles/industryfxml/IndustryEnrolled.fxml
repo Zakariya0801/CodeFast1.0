@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0">
+         <children>
+            <Label layoutX="261.0" layoutY="28.0" text="Currently Enrolled Studnets" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor1" layoutX="73.0" layoutY="84.0" prefHeight="403.0" prefWidth="826.0">
+               <children>
+                  <AnchorPane fx:id="Anchor2" layoutX="23.0" layoutY="35.0" prefHeight="260.0" prefWidth="774.0">
+                     <children>
+                        <TableView fx:id="AppliedTable" layoutX="13.0" layoutY="16.0" prefHeight="306.0" prefWidth="730.0">
+                           <columns>
+                              <TableColumn fx:id="id1" prefWidth="115.19999694824219" text="Student ID" />
+                              <TableColumn fx:id="name1" prefWidth="161.60003662109375" text="Student Name" />
+                              <TableColumn fx:id="emails1" prefWidth="172.7999267578125" text="Student Email" />
+                              <TableColumn fx:id="cgpa1" minWidth="0.0" prefWidth="128.7999267578125" text="CGPA" />
+                              <TableColumn fx:id="performance1" prefWidth="149.599853515625" text="Student Performance" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <Button fx:id="BackButton" layoutX="72.0" layoutY="518.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="44.0" prefWidth="104.0" text="Back" />
+            <Button fx:id="RejectButton" layoutX="795.0" layoutY="518.0" mnemonicParsing="false" onAction="#removeStudent" prefHeight="44.0" prefWidth="104.0" text="Remove" />
+         </children>
+      </AnchorPane>
+   </items>
+   <stylesheets>
+      <URL value="@../../cssFiles/application.css" />
+      <URL value="@../../cssFiles/Offers.css" />
+   </stylesheets>
+</SplitPane>

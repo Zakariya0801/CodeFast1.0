@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" stylesheets="@../../cssFiles/application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="174.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button fx:id="SelectedTab" layoutX="-2.0" layoutY="75.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="DashBoard" />
+            <Button layoutX="-2.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="138.0" text="Accounts" />
+            <Button layoutX="-2.0" layoutY="145.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="40.0" prefWidth="138.0" text="Performance" />
+            <Button layoutX="-2.0" layoutY="225.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="138.0" text="Settings" />
+            <Button layoutX="-1.0" layoutY="185.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="40.0" prefWidth="138.0" text="Offers" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0" stylesheets="@../../cssFiles/IndustryStyle.css">
+         <children>
+            <AnchorPane fx:id="InfoTab" layoutX="22.0" layoutY="54.0" prefHeight="186.0" prefWidth="390.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Name" textFill="WHITE" />
+                  <Label fx:id="UserName" layoutX="14.0" layoutY="32.0" prefHeight="26.0" prefWidth="211.0" text="I_Name" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="72.0" text="Email" textFill="WHITE" />
+                  <Label fx:id="DegreeName" layoutX="14.0" layoutY="90.0" prefHeight="26.0" prefWidth="334.0" text="I_Email" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="129.0" text="Description" textFill="WHITE" />
+                  <Label fx:id="DegreeName1" layoutX="14.0" layoutY="147.0" prefHeight="26.0" prefWidth="334.0" text="I_Description" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label fx:id="codefast1" layoutX="435.0" layoutY="322.0" prefHeight="32.0" prefWidth="233.0" text="Contest Performance" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="st_performance" layoutX="24.0" layoutY="248.0" text="Student Participation" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor2" layoutX="27.0" layoutY="280.0" prefHeight="335.0" prefWidth="380.0">
+               <children>
+                  <PieChart fx:id="pieChart1" layoutX="8.0" layoutY="6.0" prefHeight="308.0" prefWidth="358.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Anchor1" layoutX="435.0" layoutY="53.0" prefHeight="224.0" prefWidth="351.0">
+               <children>
+                  <BarChart fx:id="StudentPart" layoutX="17.0" layoutY="17.0" prefHeight="228.0" prefWidth="341.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Anchor3" layoutX="435.0" layoutY="354.0" prefHeight="261.0" prefWidth="380.0">
+               <children>
+                  <BarChart fx:id="Monitor" layoutX="17.0" layoutY="17.0" prefHeight="222.0" prefWidth="342.0">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+            <Label layoutX="27.0" layoutY="23.0" text="My Information" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="codefast" layoutX="431.0" layoutY="22.0" prefHeight="26.0" prefWidth="195.0" text="CodeFast Monitor" textFill="#3325b1">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>

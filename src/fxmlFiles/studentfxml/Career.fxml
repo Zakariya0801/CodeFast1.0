@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button layoutX="1.0" layoutY="75.0" mnemonicParsing="false" onAction="#switchtoDashBoard" prefHeight="35.0" prefWidth="135.0" text="DashBoard" />
+            <Button layoutX="1.0" layoutY="110.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="35.0" prefWidth="135.0" text="Courses" />
+            <Button layoutX="1.0" layoutY="145.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="135.0" text="Accounts" />
+            <Button layoutY="250.0" mnemonicParsing="false" onAction="#switchtoStudyMaterial" prefHeight="35.0" prefWidth="135.0" text="Study Material" />
+            <Button layoutY="285.0" mnemonicParsing="false" onAction="#switchtoJobInternship" prefHeight="35.0" prefWidth="135.0" text="Job/Internship" />
+            <Button layoutY="320.0" mnemonicParsing="false" onAction="#switchtoFeedback" prefHeight="35.0" prefWidth="135.0" text="Feedback" />
+            <Button layoutY="355.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="135.0" text="Settings" />
+            <Button layoutX="1.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="35.0" prefWidth="135.0" text="Contests" />
+            <Button fx:id="SelectedTab" layoutY="215.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="135.0" text="Career" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="818.0">
+         <children>
+            <Label layoutX="25.0" layoutY="30.0" text="Currently Enrolled" textFill="#4026b4">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor2" layoutX="24.0" layoutY="65.0" prefHeight="220.0" prefWidth="754.0">
+               <children>
+                  <TableView fx:id="JobTable" layoutX="32.0" layoutY="10.0" prefHeight="200.0" prefWidth="690.0">
+                    <columns>
+                      <TableColumn fx:id="CompID" prefWidth="96.00001525878906" text="Company_ID" />
+                      <TableColumn fx:id="Name" minWidth="0.800048828125" prefWidth="136.0" text="Company_Name" />
+                        <TableColumn fx:id="Description" prefWidth="339.99993896484375" text="Description" />
+                        <TableColumn fx:id="Type" prefWidth="111.2000732421875" text="JobType" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="25.0" layoutY="310.0" text="Offers" textFill="#4026b4">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor1" layoutX="24.0" layoutY="343.0" prefHeight="266.0" prefWidth="754.0">
+               <children>
+                  <TableView fx:id="OfferTable" layoutX="32.0" layoutY="10.0" prefHeight="200.0" prefWidth="690.0">
+                     <columns>
+                        <TableColumn fx:id="CompID1" prefWidth="92.80000305175781" text="Company_ID" />
+                        <TableColumn fx:id="Name1" minWidth="0.800048828125" prefWidth="164.79998779296875" text="Company_Name" />
+                        <TableColumn fx:id="Description1" prefWidth="320.0" text="Description" />
+                        <TableColumn fx:id="Type1" prefWidth="94.4000244140625" text="JobType" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="AcceptButton" layoutX="578.0" layoutY="217.0" mnemonicParsing="false" onAction="#acceptOffer" text="Accept" />
+                  <Button fx:id="RejectButton" layoutX="657.0" layoutY="217.0" mnemonicParsing="false" onAction="#rejectOffer" text="Reject" />
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </items>
+   <stylesheets>
+      <URL value="@../../cssFiles/application.css" />
+      <URL value="@../../cssFiles/CarrierStyle.css" />
+   </stylesheets>
+</SplitPane>

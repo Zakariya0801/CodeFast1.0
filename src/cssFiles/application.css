@@ -1,0 +1,84 @@
+/* JavaFX CSS - Leave this comment until you have at least created one rule which uses -fx-Property */
+
+.root {
+    -fx-background-color: white;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: grey;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 13px;
+    -fx-cursor: hand; /* Use 'hand' cursor for better UX */
+}
+
+.button:hover {
+    -fx-background-color: #f0f0f0; /* Light gray background on hover */
+    -fx-text-fill: black; /* Text color changes to black on hover */
+}
+
+#SelectedTab {
+    -fx-text-fill: #000000;
+    -fx-background-color: #4962f2;
+}
+
+#InfoTab {
+    -fx-background-color: #4962f2;
+    -fx-border-radius: 15px;
+}
+
+#InfoTab:hover {
+    -fx-background-color: #304fb5; /* Darker blue on hover */
+}
+
+#InfoTab Label {
+    -fx-text-fill: #FFFFFF;
+}
+
+#RecentContTab {
+    -fx-background-color: #4962f2;
+}
+
+#RecentContTab:hover {
+    -fx-background-color: #304fb5; /* Darker blue on hover */
+}
+
+#RecentContTab Label {
+    -fx-text-fill: #FFFFFF;
+}
+
+#SettingAncor {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-text-fill: #333333; /* Dark text color */
+    -fx-padding: 10px 15px; /* Spacing around the text */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-font-weight: bold; /* Bold font style */
+}
+
+#ChangeButton {
+    -fx-background-color: #28a745; /* Green background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 10px 20px; /* Add padding for a neat button size */
+    -fx-border-radius: 5px; /* Rounded corners for better appearance */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-weight: bold; /* Make the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+}
+
+#ChangeButton:hover {
+    -fx-background-color: #218838; /* Darker green for hover effect */
+}
+
+#logout {
+    -fx-background-color: #ff6666; /* Green background */
+    -fx-text-fill: #ffffff; /* White text color */
+    -fx-padding: 10px 20px; /* Add padding for a neat button size */
+    -fx-border-radius: 5px; /* Rounded corners for better appearance */
+    -fx-font-size: 12px; /* Smaller font size */
+    -fx-font-weight: bold; /* Make the text bold */
+    -fx-cursor: hand; /* Change cursor to pointer on hover */
+}
+
+#logout:hover {
+    -fx-background-color: #FF0000; /* Darker green for hover effect */
+}

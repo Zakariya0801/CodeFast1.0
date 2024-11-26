@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.14329580348004095" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SceneController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="174.0">
+         <children>
+            <ImageView fitHeight="28.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="68.0" layoutY="20.0" text="CodeFast" />
+            <Button layoutX="-2.0" layoutY="70.0" mnemonicParsing="false" onAction="#switchtoDashBoard" prefHeight="35.0" prefWidth="138.0" text="DashBoard" />
+            <Button layoutX="-2.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchtoAccount" prefHeight="35.0" prefWidth="138.0" text="Accounts" />
+            <Button layoutX="-1.0" layoutY="140.0" mnemonicParsing="false" onAction="#switchtoContests" prefHeight="40.0" prefWidth="138.0" text="Performance " />
+            <Button layoutX="-2.0" layoutY="285.0" mnemonicParsing="false" onAction="#switchtoSettings" prefHeight="35.0" prefWidth="138.0" text="Settings" />
+            <Button layoutX="-1.0" layoutY="180.0" mnemonicParsing="false" onAction="#switchtoCourse" prefHeight="35.0" prefWidth="138.0" text="Requests" />
+            <Button fx:id="SelectedTab" layoutX="-1.0" layoutY="215.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="138.0" text="Manage" />
+            <Button layoutX="-1.0" layoutY="250.0" mnemonicParsing="false" onAction="#switchtoFeedback" prefHeight="35.0" prefWidth="138.0" text="Contests" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0" stylesheets="@../../cssFiles/IndustryStyle.css">
+         <children>
+            <Label layoutX="21.0" layoutY="21.0" text="Registered Students " textFill="#100ac7">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor1" layoutX="14.0" layoutY="45.0" prefHeight="218.0" prefWidth="770.0">
+               <children>
+                  <TableView fx:id="OffersTable" layoutX="14.0" layoutY="9.0" prefHeight="200.0" prefWidth="735.0">
+                    <columns>
+                      <TableColumn fx:id="id" prefWidth="90.40000915527344" text="Student_ID" />
+                      <TableColumn fx:id="name" prefWidth="160.79998779296875" text="Student_Name" />
+                        <TableColumn fx:id="emails" prefWidth="236.0" text="Email" />
+                        <TableColumn fx:id="cgpa" prefWidth="129.60003662109375" text="CGPA" />
+                        <TableColumn fx:id="performance" prefWidth="97.5999755859375" text="SPerformance" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="18.0" layoutY="284.0" text="Registered Industries" textFill="#100ac7">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor2" layoutX="14.0" layoutY="313.0" prefHeight="122.0" prefWidth="770.0">
+               <children>
+                  <Label fx:id="lable" layoutX="14.0" layoutY="16.0" text="Company_ID" textFill="#045e22">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="150.0" layoutY="16.0" text="Company_Name" textFill="#045e22">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="313.0" layoutY="16.0" text="Company_Email" textFill="#045e22">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="478.0" layoutY="16.0" text="Company_Description" textFill="#045e22">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="38.0" layoutY="45.0" text="ID_1" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="38.0" layoutY="71.0" text="ID_2" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="38.0" layoutY="98.0" text="ID_3" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="159.0" layoutY="45.0" text="Systems" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="159.0" layoutY="71.0" text="Dubizzle Labs" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="159.0" layoutY="98.0" text="DevSinc" textFill="#2330c4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="313.0" layoutY="45.0" text="systems@info.com" textFill="#1e1601">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="314.0" layoutY="71.0" text="dubizle@info.com" textFill="#1e1601">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="314.0" layoutY="98.0" text="devsinc@info.com" textFill="#1e1601">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="478.0" layoutY="45.0" text="It is Pakistan's Number 1 Software house" textFill="#170d73">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="478.0" layoutY="71.0" text="A Leading Software house" textFill="#170d73">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="478.0" layoutY="98.0" text="Competitive Software house" textFill="#170d73">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="26.0" layoutY="457.0" text="Registered Courses" textFill="#100ac7">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="Anchor3" layoutX="16.0" layoutY="485.0" prefHeight="130.0" prefWidth="770.0">
+               <children>
+                  <Label fx:id="lable" layoutX="21.0" layoutY="23.0" text="Course_ID" textFill="#086e34">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="45.0" layoutY="57.0" text="C_1" textFill="#1823a4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="46.0" layoutY="88.0" text="C_2" textFill="#1823a4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="173.0" layoutY="23.0" text="Course_Name" textFill="#086e34">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="176.0" layoutY="57.0" text="Data Structure" textFill="#1823a4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="175.0" layoutY="86.0" text="Design &amp; Analysis of Algorithm" textFill="#1823a4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="391.0" layoutY="23.0" text="Course_Description" textFill="#086e34">
+                     <font>
+                        <Font name="Times New Roman Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="391.0" layoutY="57.0" text="Learn efficient data organization techniques and algorithms">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lable" layoutX="391.0" layoutY="86.0" text="Learn efficient and competitive speed programing">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </items>
+   <stylesheets>
+      <URL value="@../../cssFiles/application.css" />
+      <URL value="@../../cssFiles/Offers.css" />
+   </stylesheets>
+</SplitPane>

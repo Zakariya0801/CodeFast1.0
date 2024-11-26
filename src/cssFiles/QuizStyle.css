@@ -1,0 +1,88 @@
+/* JavaFX CSS - Styling for a Formal and Elegant Quiz Interface */
+
+/* Root styling for main background color */
+.root {
+    -fx-background-color: #f0f4f8; /* Light background for elegance and readability */
+}
+
+/* General styling for buttons */
+.button {
+    -fx-background-color: #4a90e2; /* Subtle blue background for buttons */
+    -fx-text-fill: #ffffff; /* White text color for readability */
+    -fx-padding: 10px 20px;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand; /* Hand cursor on hover for better UX */
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-border-color: #3a78b5; /* Slight border for definition */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #357ab7; /* Slightly darker blue on hover */
+}
+
+/* Styling for AnchorPane quiz questions */
+#Ancor1, #lable1 {
+    -fx-background-color: #eaf3ff; /* Soft light blue background for anchor sections */
+    -fx-padding: 20px;
+    -fx-border-color: #d1e1f2; /* Subtle border to separate question areas */
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+}
+
+/* Hover effect for AnchorPane (question containers) */
+#Ancor1:hover, #lable1:hover {
+    -fx-background-color: #d4e8ff; /* Slightly darker light blue on hover */
+}
+
+/* Styling for the Header Label (Data Structure Quiz Title) */
+.label {
+    -fx-font-size: 60px; /* Large font size for the header */
+    -fx-text-fill: #333333; /* Dark text color for contrast */
+    -fx-font-weight: bold; /* Bold font for emphasis */
+    -fx-alignment: center;
+    -fx-padding: 40px 0;
+}
+
+/* Styling for individual Labels (questions text) */
+.question-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333; /* Dark text color for contrast */
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0; /* Adds spacing between options */
+}
+
+/* Styling for CheckBoxes (options) */
+.check-box {
+    -fx-text-fill: #333333; /* Dark text for readability */
+    -fx-font-size: 14px;
+    -fx-padding: 2px 0;
+}
+
+/* Styling for the Submit Button */
+#SubmitButton {
+    -fx-background-color: #28a745; /* Green for submit button */
+    -fx-text-fill: #ffffff; /* White text for contrast */
+    -fx-padding: 8px 16px; /* Reduced padding for a smaller button */
+    -fx-font-size: 14px; /* Smaller font size */
+    -fx-font-weight: bold;
+    -fx-border-radius: 6px;
+    -fx-border-width: 1px;
+    -fx-border-color: #1c7430; /* Darker green border for emphasis */
+    -fx-cursor: hand;
+}
+
+/* Hover effect for Submit Button */
+#SubmitButton:hover {
+    -fx-background-color: #218838; /* Light green on hover */
+}
+
+/* Styling for Labels inside the AnchorPane */
+AnchorPane > .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3748; /* Slightly lighter gray for subtexts */
+    -fx-padding: 8px 0; /* Space between options */
+    -fx-font-weight: normal;
+}

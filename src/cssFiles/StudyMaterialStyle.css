@@ -1,0 +1,37 @@
+#Anc1 {
+    -fx-background-color: #add8e6; /* Light blue */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px; /* Rounded corners for a modern look */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light green background for Anchor2 */
+#Anc2 {
+    -fx-background-color: #90ee90; /* Light green */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Light yellow background for Anchor3 */
+#Anc3 {
+    -fx-background-color: #ffffe0; /* Light yellow */
+    -fx-padding: 10px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#Anc1:hover {
+    -fx-background-color: #87cefa; /* Slightly darker blue on hover */
+}
+
+#Anc2:hover {
+    -fx-background-color: #66cdaa; /* Slightly darker green on hover */
+}
+
+#Anc3:hover {
+    -fx-background-color: #fffacd; /* Slightly darker yellow on hover */
+}
