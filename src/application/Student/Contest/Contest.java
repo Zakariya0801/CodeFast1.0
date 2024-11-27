@@ -44,7 +44,7 @@ public class Contest {
 		columns.get(3).setCellValueFactory(new PropertyValueFactory<UpComingContest, String>("EndDate"));
 		DBHandler handle = PersistantFactory.getInstance().getDatabase();
 		
-		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from contest;", null,null);
+		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from Contest;", null,null);
 		while(rs.next()) {
 			ContestTable.getItems().add(new UpComingContest(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
 		}

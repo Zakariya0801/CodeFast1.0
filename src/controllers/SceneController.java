@@ -427,7 +427,7 @@ public class SceneController {
 		DBHandler db = PersistantFactory.getInstance().getDatabase();
 		ResultSet rs = db.ExecuteQuery("Contest", "isLive=1");
 		int i=0;
-		while(rs.next() && i<4) {
+		while(rs != null && rs.next() && i<4) {
 			names.get(i).setText(rs.getString("Name"));
 			i++;
 		}
@@ -444,7 +444,7 @@ public class SceneController {
 		DBHandler db = PersistantFactory.getInstance().getDatabase();
 		ResultSet rs = db.ExecuteQuery("Contest", "isLive=1");
 		int i=0;
-		while(rs.next() && i<4) {
+		while(rs != null && rs.next() && i<4) {
 			names.get(i).setText(rs.getString("Name"));
 			i++;
 		}
@@ -482,7 +482,7 @@ public class SceneController {
 				+ "ON i.Industry_Id = si.I_Id "
 				+ "WHERE si.Status = 1 AND si.S_Id=?; "
 				+ "", values,types);
-		while(rs.next()) {
+		while(rs != null && rs.next()) {
 			String jobType = (rs.getString("I_id").equals("ID_1") || rs.getString("I_id").equals("ID_3")) ? "Internship" : "Job";
 			JobTable.getItems().add(new JobTableData(rs.getString(3), rs.getString(1),rs.getString(2),jobType));
 		}
@@ -496,8 +496,8 @@ public class SceneController {
 		
 		List<String> values = new ArrayList<>();
 		List<String> types = new ArrayList<>();
-		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from contest where isLive=0;", values,types);
-		while(rs.next()) {
+		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from Contest where isLive=0;", values,types);
+		while(rs != null && rs.next()) {
 			ContestTable.getItems().add(new UpComingContest(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
 		}
 	}
@@ -510,8 +510,8 @@ public class SceneController {
 		
 		List<String> values = new ArrayList<>();
 		List<String> types = new ArrayList<>();
-		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from contest;", values,types);
-		while(rs.next()) {
+		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from Contest;", values,types);
+		while(rs != null && rs.next()) {
 			ContestTable.getItems().add(new UpComingContest(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
 		}
 	}
