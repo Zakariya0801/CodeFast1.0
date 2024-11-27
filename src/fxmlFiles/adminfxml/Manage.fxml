@@ -32,14 +32,14 @@
       </AnchorPane>
       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0" stylesheets="@../../cssFiles/IndustryStyle.css">
          <children>
-            <Label layoutX="21.0" layoutY="21.0" text="Registered Students " textFill="#100ac7">
+            <Label layoutX="22.0" layoutY="14.0" text="Registered Students " textFill="#100ac7">
                <font>
                   <Font name="Times New Roman Bold" size="18.0" />
                </font>
             </Label>
-            <AnchorPane fx:id="Anchor1" layoutX="14.0" layoutY="45.0" prefHeight="218.0" prefWidth="770.0">
+            <AnchorPane fx:id="Anchor1" layoutX="16.0" layoutY="34.0" prefHeight="227.0" prefWidth="770.0">
                <children>
-                  <TableView fx:id="OffersTable" layoutX="14.0" layoutY="9.0" prefHeight="200.0" prefWidth="735.0">
+                  <TableView fx:id="OffersTable" layoutX="14.0" layoutY="9.0" prefHeight="179.0" prefWidth="735.0">
                     <columns>
                       <TableColumn fx:id="id" prefWidth="90.40000915527344" text="Student_ID" />
                       <TableColumn fx:id="name" prefWidth="160.79998779296875" text="Student_Name" />
@@ -48,6 +48,7 @@
                         <TableColumn fx:id="performance" prefWidth="97.5999755859375" text="SPerformance" />
                     </columns>
                   </TableView>
+                  <Button fx:id="RejectButton" layoutX="673.0" layoutY="188.0" mnemonicParsing="false" onAction="#removeStudentAdmin" text="Remove" />
                </children>
             </AnchorPane>
             <Label layoutX="18.0" layoutY="284.0" text="Registered Industries" textFill="#100ac7">

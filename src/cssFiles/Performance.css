@@ -62,6 +62,66 @@
     -fx-border-color: #dc6708; /* Subtle darker orange border */
     -fx-border-width: 1px; /* Thin border */
 }
+#ContestTable {
+    -fx-background-color: #edf7fc; /* Light blue background to match anchor */
+    -fx-border-color: #b0d4e3; /* Subtle blue border */
+    -fx-border-radius: 5px; /* Rounded corners */
+    -fx-padding: 10px; /* Padding around the table */
+    -fx-font-family: "Times New Roman"; /* Formal and elegant font */
+    -fx-font-size: 12px; /* Readable and smaller font size */
+}
+
+/* Column Header Styling */
+#ContestTable .column-header {
+    -fx-background-color: #d4eefb; /* Soft blue for headers */
+    -fx-text-fill: #085b8a; /* Dark blue text for headers */
+    -fx-font-weight: bold; /* Bold header text */
+    -fx-border-color: #b0d4e3; /* Border matching the table */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center align header text */
+    -fx-padding: 8px; /* Padding for header cells */
+}
+
+/* Column Specific Styling */
+#ContestTable .column-ID {
+    -fx-background-color: #f5fafd; /* Lightest blue for Email column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#ContestTable .column-Name {
+    -fx-background-color: #e8f8f5; /* Light aqua blue for Name column */
+    -fx-text-fill: #005480; /* Muted blue text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#ContestTable .column-StartDate {
+     -fx-background-color: #f5fafd; /* Lightest blue for Email column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+#ContestTable .column-EndDate {
+    -fx-background-color: #e9ecef; /* Light gray for Degree column */
+    -fx-text-fill: #495057; /* Neutral gray text */
+    -fx-alignment: center; /* Center-align entries */
+}
+
+/* Table Cell Padding and Border */
+#ContestTable .table-cell {
+    -fx-padding: 10px; /* Padding inside cells */
+    -fx-border-color: #d1e4ec; /* Subtle border between cells */
+    -fx-border-width: 0 0 1px 0; /* Bottom border for separation */
+    -fx-alignment: center; /* Center-align text in all cells */
+    -fx-text-fill: #0000ff; /* Blue text for all entries */
+}
+
+/* Table Row Hover Effect */
+#ContestTable .table-row-cell:hover {
+    -fx-background-color: #f1faff; /* Very light blue background on hover */
+    -fx-cursor: hand; /* Pointer cursor to indicate interactivity */
+}
+
 
 #AttemptButton:hover {
     -fx-background-color: #e06612; /* Darker orange for hover effect */

@@ -65,7 +65,7 @@ public abstract class User {
 	public void removeStudent(String studentID) throws SQLException {}
 	public boolean MakeNewContest(String ContName,String Start,String End,String TestCaseInp,String TestCaseOut,String Statement) throws SQLException  {return false;}
 	public boolean addProblem(Contest c,String TestCaseInp,String TestCaseOut,String Statement) throws SQLException {return false;}
-
+	public void removeStudentAdmin(String StudentID) throws SQLException {}
 	public boolean openContest(String ContestID) throws IOException, SQLException {return false;}
 	public void setEnrolledTable(List<TableColumn<OffersData, String>> columns,TableView<OffersData> AppliedTable, HashMap<String,Student> enrolled) throws SQLException {
 		columns.get(0).setCellValueFactory(new PropertyValueFactory<OffersData, String>("Student_ID"));

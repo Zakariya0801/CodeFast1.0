@@ -501,6 +501,20 @@ public class SceneController {
 			ContestTable.getItems().add(new UpComingContest(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
 		}
 	}
+	public void setAdminUpcomingTable() throws SQLException {
+		ContestID.setCellValueFactory(new PropertyValueFactory<UpComingContest, String>("Contest_ID"));
+		ContestName.setCellValueFactory(new PropertyValueFactory<UpComingContest, String>("Contest_Name"));
+		StartDate.setCellValueFactory(new PropertyValueFactory<UpComingContest, String>("StartDate"));
+		EndDate.setCellValueFactory(new PropertyValueFactory<UpComingContest, String>("EndDate"));
+		DBHandler handle = PersistantFactory.getInstance().getDatabase();
+		
+		List<String> values = new ArrayList<>();
+		List<String> types = new ArrayList<>();
+		ResultSet rs = handle.ExecuteQuery("Select Contest_Id,Name,StartDate,EndDate from contest;", values,types);
+		while(rs.next()) {
+			ContestTable.getItems().add(new UpComingContest(rs.getString(1),rs.getString(2),rs.getString(3),rs.getString(4)));
+		}
+	}
 	public void setOfferTable() throws SQLException {
 		CompID1.setCellValueFactory(new PropertyValueFactory<JobTableData, String>("Company_ID"));
 		Name1.setCellValueFactory(new PropertyValueFactory<JobTableData, String>("Company_Name"));
@@ -688,7 +702,14 @@ public class SceneController {
 					));
 		}
 	}
-
+	@FXML
+	public void removeStudentAdmin(ActionEvent e) throws SQLException, IOException {
+		OffersData student = OffersTable.getSelectionModel().getSelectedItem();
+		if(student == null) AlertSender.SendWarning("NOT SELECTED", "No Student Selected").showAndWait();
+		currentUser.removeStudentAdmin(student.getStudent_ID());
+		AlertSender.SendInformation("REMOVED SUCCESSFULLY", "Student with ID: " + student.Student_ID + " removed successfully").showAndWait();
+		switchtoStudyMaterial(e);
+	}
 	public void setOffersTable() throws SQLException {
 		id.setCellValueFactory(new PropertyValueFactory<OffersData, String>("Student_ID"));
 		name.setCellValueFactory(new PropertyValueFactory<OffersData, String>("Student_Name"));

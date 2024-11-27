@@ -34,7 +34,6 @@ public class MySqlHandler implements DBHandler {
 	
 	@Override
 	public void ExecuteCreate(String Table,String id, StudentData st) {
-		System.out.println("This is called 10");
 		String sql = "INSERT INTO " + Table +  " (Student_Id, Name, Password, CGPA, Degree, Email, SPerformance)\n"
 				+ "VALUES (?, ?, ?, ?, ?, ?, 0.0);\n";
 		
@@ -56,7 +55,6 @@ public class MySqlHandler implements DBHandler {
 	}
 	@Override
 	public ResultSet ExecuteQuery(String Query,List<String> values, List<String> type) {
-		System.out.println("This is called");
 		try {
 			PreparedStatement statement = connection.prepareStatement(Query);
 			int i=1;
@@ -81,7 +79,6 @@ public class MySqlHandler implements DBHandler {
 	}
 	@Override
 	public void ExecuteUpdate(String Query,List<String> values, List<String> type) {
-		System.out.println("This is called 1");
 		try {
 			PreparedStatement statement = connection.prepareStatement(Query);
 			int i=1;
@@ -105,7 +102,6 @@ public class MySqlHandler implements DBHandler {
 	}
 	@Override
 	public ResultSet ExecuteQuery(String Table, String Condition) {
-		System.out.println("This is called 2");
 		String sql = "Select * from " + Table + " where " + Condition;
 		try {
 			PreparedStatement statement = connection.prepareStatement(sql);

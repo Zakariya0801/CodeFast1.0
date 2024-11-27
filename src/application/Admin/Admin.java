@@ -134,4 +134,24 @@ public class Admin extends User {
 		Singleton.getInstance().createProblem(c, Statement, TestCaseInp, TestCaseOut);
 		return true;
 	}
+	@Override
+	public void removeStudentAdmin(String StudentID) throws SQLException{
+		DBHandler handle = PersistantFactory.getInstance().getDatabase();
+		List<String> values = new ArrayList<>();
+		List<String> types = new ArrayList<>();
+		values.add(StudentID);types.add("string");
+		String[] queries = {
+				"DELETE FROM StudentIndustry WHERE S_Id =?",
+				"DELETE FROM evaluatestudentcontest WHERE S_Id =?",
+				"DELETE FROM evaluatestudentquiz WHERE S_Id =?",
+				"DELETE FROM CourseRegistration WHERE S_Id=?",
+				"DELETE FROM Students WHERE Student_id=?"
+		};
+		for(String q : queries) {
+			
+			handle.ExecuteUpdate(q, values, types);
+			System.out.println("Removed successfully");
+		}
+		
+	}
 }

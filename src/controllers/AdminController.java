@@ -51,6 +51,7 @@ public class AdminController implements UserController {
 		root = loader.load();
 		SceneController contr = loader.getController();
 		contr.setQuizTable();
+		contr.setAdminUpcomingTable();
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
