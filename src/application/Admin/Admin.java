@@ -152,6 +152,6 @@ public class Admin extends User {
 			handle.ExecuteUpdate(q, values, types);
 			System.out.println("Removed successfully");
 		}
-		
+		InformationExpert.getInstance().removeStudent(StudentID);
 	}
 }

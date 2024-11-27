@@ -20,8 +20,12 @@ public class MySqlHandler implements DBHandler {
 		url = "jdbc:mysql://localhost:3306/CodeFast";
 		username = "root";
 		password = "12345678";
+//		url = "jdbc:mysql://sql12.freesqldatabase.com:3306/sql12746689"; // Corrected URL
+//		username = "sql12746689";
+//		password = "mFnf5d4hlt";
+
 		try  {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/CodeFast", "root", "12345678");
+			connection = DriverManager.getConnection(url, username, password);
 			System.out.println("Database connected!");
 		}catch(Exception e) {
 			e.printStackTrace();
