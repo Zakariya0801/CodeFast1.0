@@ -30,9 +30,9 @@
       </AnchorPane>
       <AnchorPane fx:id="tot" minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="793.0">
          <children>
-            <AnchorPane fx:id="Anchor2" layoutX="24.0" layoutY="66.0" prefHeight="230.0" prefWidth="756.0">
+            <AnchorPane fx:id="Anchor2" layoutX="24.0" layoutY="66.0" prefHeight="205.0" prefWidth="756.0">
                <children>
-                  <TableView fx:id="QuizTable" layoutX="14.0" layoutY="15.0" prefHeight="200.0" prefWidth="706.0">
+                  <TableView fx:id="QuizTable" layoutX="14.0" layoutY="15.0" prefHeight="171.0" prefWidth="706.0">
                     <columns>
                       <TableColumn fx:id="QID" prefWidth="130.3999481201172" text="QuizID" />
                       <TableColumn fx:id="CName" prefWidth="133.60003662109375" text="Course Name" />
@@ -48,37 +48,34 @@
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </Label>
-            <AnchorPane fx:id="Anchor1" layoutX="24.0" layoutY="341.0" prefHeight="130.0" prefWidth="756.0">
-               <children>
-                  <Label layoutX="36.0" layoutY="22.0" text="Contest 1:" textFill="#0f8e0d">
-                     <font>
-                        <Font name="Times New Roman Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-                  <Button fx:id="ViewRankingButton" layoutX="151.0" layoutY="17.0" mnemonicParsing="false" onAction="#viewRankingsC1" prefHeight="30.0" prefWidth="579.0" text="View Performnce" />
-                  <Button fx:id="ViewRankingButton" layoutX="150.0" layoutY="72.0" mnemonicParsing="false" onAction="#viewRankingsC2" prefHeight="30.0" prefWidth="579.0" text="View Performnce" />
-                  <Label layoutX="36.0" layoutY="76.0" text="Contest 2:" textFill="#0f8e0d">
-                     <font>
-                        <Font name="Times New Roman Bold Italic" size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="Anchor3" layoutX="24.0" layoutY="513.0" prefHeight="97.0" prefWidth="756.0">
+            <AnchorPane fx:id="Anchor3" layoutX="24.0" layoutY="550.0" prefHeight="79.0" prefWidth="756.0">
                <children>
                   <Button fx:id="LeaderBoardsButton" layoutX="77.0" layoutY="21.0" mnemonicParsing="false" onAction="#viewLeaderboard" prefHeight="44.0" prefWidth="610.0" text="View High Achievers" />
                </children>
             </AnchorPane>
-            <Label layoutX="30.0" layoutY="310.0" text="Contest Performance " textFill="#3626e4">
+            <Label layoutX="30.0" layoutY="272.0" text="Contest Performance " textFill="#3626e4">
                <font>
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </Label>
-            <Label layoutX="30.0" layoutY="485.0" text="View High Achievers" textFill="#3626e4">
+            <Label layoutX="22.0" layoutY="527.0" text="View High Achievers" textFill="#3626e4">
                <font>
                   <Font name="Times New Roman Bold" size="20.0" />
                </font>
             </Label>
+            <AnchorPane fx:id="Anchor1" layoutX="22.0" layoutY="295.0" prefHeight="183.0" prefWidth="761.0">
+               <children>
+                  <TableView fx:id="ContestTable" layoutX="21.0" layoutY="14.0" prefHeight="154.0" prefWidth="720.0">
+                     <columns>
+                        <TableColumn fx:id="ContestID" prefWidth="150.0" text="Contest_ID" />
+                        <TableColumn fx:id="ContestName" prefWidth="205.0" text="Name" />
+                        <TableColumn fx:id="StartDate" prefWidth="167.0" text="Start_Date" />
+                        <TableColumn fx:id="EndDate" prefWidth="175.0" text="End_Date" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="ViewRankingButton" layoutX="631.0" layoutY="171.0" mnemonicParsing="false" onAction="#viewRankingsTable" text="View Rankings" />
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
    </items>

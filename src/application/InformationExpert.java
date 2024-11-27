@@ -44,7 +44,6 @@ public class InformationExpert {
 		industries  = new HashMap<>();//done
 		industryInformations = new HashMap<>();//done
 		this.admin = new Admin("AD_1");//done
-//		this.adminInformation = new UserInformation("AD_1");//done
 		contests = new HashMap<>();
 		contestDescriptions = new HashMap<>();
 		courses = new HashMap<>();//done
@@ -186,6 +185,22 @@ public class InformationExpert {
 	public static synchronized InformationExpert getInstance() throws SQLException {
 		if(instance == null) instance = new InformationExpert();
 		return instance;
+	}
+	public void removeStudent(String StudentID) {
+		if(students.containsKey(StudentID)) students.remove(StudentID);
+		if(studentInformation.containsKey(StudentID)) studentInformation.remove(StudentID);
+		if(studentEvaluations.containsKey(StudentID)) studentEvaluations.remove(StudentID);
+		for (Map.Entry<String, IndustryInformation> entry : industryInformations.entrySet())
+		{
+			if(entry.getValue().getEnrolledStudents().containsKey(StudentID))
+				entry.getValue().getEnrolledStudents().remove(StudentID);
+			if(entry.getValue().getRejectedStudents().containsKey(StudentID))
+				entry.getValue().getRejectedStudents().remove(StudentID);
+			if(entry.getValue().getRequestedStudents().containsKey(StudentID))
+				entry.getValue().getRequestedStudents().remove(StudentID);
+			if(entry.getValue().getPendingStudents().containsKey(StudentID))
+				entry.getValue().getPendingStudents().remove(StudentID);
+		}
 	}
 	public int getNumberofQuizEvaluations() {
 		int ans = 0;

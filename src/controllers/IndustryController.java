@@ -51,6 +51,7 @@ public class IndustryController implements UserController {
 		SceneController contr = loader.getController();
 		contr.setButton();
 		contr.setQuizTable();
+		contr.setAdminUpcomingTable();
 		stage = (Stage)((Node)e.getSource()).getScene().getWindow();
 		scene = new Scene(root);
 		stage.setScene(scene);
